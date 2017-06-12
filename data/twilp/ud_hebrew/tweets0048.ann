@@ -1,0 +1,5 @@
+T1.1	ADJ 0 2	לח
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=_
+T1.2	INTJ 3 8	חחחחח
+R1.2-1	discourse Arg1:T1.1 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=_

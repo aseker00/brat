@@ -1,0 +1,34 @@
+T1.1	PROPN 0 7	@NBHRUY
+R1.1-1	vocative Arg1:T1.2 Arg2:T1.1
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=@
+T1.2	NOUN 8 17	מניפולציה
+R1.2-1	parataxis Arg1:T1.9 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=NN
+T1.3	PUNCT 18 19	.
+R1.3-1	punct Arg1:T1.2 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=yyDOT
+T1.4	NOUN 20 25	תמונה
+R1.4-1	nsubj Arg1:T1.9 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=NN
+T1.5	NUM 26 29	אחת
+R1.5-1	nummod Arg1:T1.4 Arg2:T1.5
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=CD
+T1.6	ADP 30 31	מ
+A1.6-1	AdpType T1.6 Prep
+R1.6-1	case Arg1:T1.7 Arg2:T1.6
+#1.6	AnnotatorNotes T1.6	LEMMA=_ POSTAG=PREPOSITION
+T1.7	NOUN 32 37	זווית
+R1.7-1	nmod Arg1:T1.4 Arg2:T1.7
+#1.7	AnnotatorNotes T1.7	LEMMA=_ POSTAG=NN
+T1.8	NUM 38 41	אחת
+R1.8-1	nummod Arg1:T1.7 Arg2:T1.8
+#1.8	AnnotatorNotes T1.8	LEMMA=_ POSTAG=CD
+T1.9	ADJ 42 46	שווה
+#1.9	AnnotatorNotes T1.9	LEMMA=_ POSTAG=JJ
+T1.10	NUM 47 51	אלפי
+A1.10-1	Definite T1.10 Cons
+R1.10-1	nummod Arg1:T1.11 Arg2:T1.10
+#1.10	AnnotatorNotes T1.10	LEMMA=_ POSTAG=CDT
+T1.11	NOUN 52 57	שקרים
+R1.11-1	obj Arg1:T1.9 Arg2:T1.11
+#1.11	AnnotatorNotes T1.11	LEMMA=_ POSTAG=NN MISC=_`

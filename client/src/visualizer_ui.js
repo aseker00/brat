@@ -619,7 +619,7 @@ var VisualizerUI = (function($, window, undefined) {
         } else {
           form.dialog('open');
         }
-        slideToggle($('#pulldown').stop(), false);
+        //slideToggle($('#pulldown').stop(), false);
         return form;
       };
 
@@ -1827,12 +1827,12 @@ var VisualizerUI = (function($, window, undefined) {
       $('#header').
         mouseenter(function(evt) {
           clearTimeout(menuTimer);
-          slideToggle($('#pulldown').stop(), true);
+          //slideToggle($('#pulldown').stop(), true);
         }).
         mouseleave(function(evt) {
           clearTimeout(menuTimer);
           menuTimer = setTimeout(function() {
-            slideToggle($('#pulldown').stop(), false);
+            //slideToggle($('#pulldown').stop(), false);
           }, 500);
         });
 
@@ -1886,7 +1886,7 @@ var VisualizerUI = (function($, window, undefined) {
     
       $('#pulldown').find('input').button();
       var headerHeight = $('#mainHeader').height();
-      $('#svg').css('margin-top', headerHeight + 10);
+      //$('#svg').css('margin-top', headerHeight + 10);
       aboutDialog = $('#about');
       aboutDialog.dialog({
             autoOpen: false,

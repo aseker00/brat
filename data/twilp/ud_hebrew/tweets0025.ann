@@ -1,0 +1,29 @@
+T1.1	ADV 0 2	כש
+R1.1-1	advmod Arg1:T1.2 Arg2:T1.1
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=_
+T1.2	VERB 3 5	יש
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=_
+T1.3	ADP 6 7	ל
+R1.3-1	case Arg1:T1.2 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=_
+T1.4	PRON 8 13	אנחנו
+R1.4-1	obj Arg1:T1.3 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=_
+T1.5	NOUN 14 18	מאנצ
+R1.5-1	nsubj Arg1:T1.2 Arg2:T1.5
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=_
+T1.6	ADJ 19 22	רצח
+R1.6-1	amod Arg1:T1.5 Arg2:T1.6
+#1.6	AnnotatorNotes T1.6	LEMMA=_ POSTAG=_
+T1.7	INTJ 23 24	ח
+R1.7-1	discourse Arg1:T1.6 Arg2:T1.7
+#1.7	AnnotatorNotes T1.7	LEMMA=_ POSTAG=_
+T1.8	SYM 25 35	\U0001f60a
+R1.8-1	discourse Arg1:T1.2 Arg2:T1.8
+#1.8	AnnotatorNotes T1.8	LEMMA=_ POSTAG=E
+T1.9	PROPN 36 42	#נאפיס
+R1.9-1	dislocated Arg1:T1.2 Arg2:T1.9
+#1.9	AnnotatorNotes T1.9	LEMMA=_ POSTAG=#
+T1.10	SYM 43 66	https://t.co/7ou0qwgKEu
+R1.10-1	dislocated Arg1:T1.2 Arg2:T1.10
+#1.10	AnnotatorNotes T1.10	LEMMA=_ POSTAG=U

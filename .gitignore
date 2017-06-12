@@ -6,5 +6,13 @@ config.py
 *.pyo
 
 # Standard locations of data and server temporary files
-data/
+!data/
+data/*
+!data/twilp
+data/twilp/*
+!data/twilp/ud_hebrew
+!data/twilp/annotation.conf
+!data/twilp/kb_shortcuts.conf
+!data/twilp/tools.conf
+!data/twilp/visual.conf
 work/

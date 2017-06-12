@@ -1,0 +1,36 @@
+T1.1	NOUN 0 4	לילה
+R1.1-1	nsubj Arg1:T1.2 Arg2:T1.1
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=NN
+T1.2	ADJ 5 8	לבן
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=JJ
+T1.3	SCONJ 9 11	כי
+R1.3-1	mark Arg1:T1.4 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=CC
+T1.4	VERB 12 14	יש
+A1.4-1	AdvType T1.4 Ex
+R1.4-1	advcl Arg1:T1.2 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=EX
+T1.5	NOUN 15 22	מוקדמות
+A1.5-1	Definite T1.5 Cons
+R1.5-1	nsubj Arg1:T1.4 Arg2:T1.5
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=JJT
+T1.6	DET 23 24	ה
+A1.6-1	Definite T1.6 Def
+A1.6-2	PronType T1.6 Art
+R1.6-1	det Arg1:T1.7 Arg2:T1.6
+#1.6	AnnotatorNotes T1.6	LEMMA=_ POSTAG=DEF
+T1.7	NOUN 25 32	מונדיאל
+R1.7-1	nmod Arg1:T1.5 Arg2:T1.7
+#1.7	AnnotatorNotes T1.7	LEMMA=_ POSTAG=NN
+T1.8	SYM 33 43	\U0001f44c
+R1.8-1	discourse Arg1:T1.2 Arg2:T1.8
+#1.8	AnnotatorNotes T1.8	LEMMA=_ POSTAG=E
+T1.9	SYM 44 54	\U0001f3fc
+R1.9-1	discourse Arg1:T1.2 Arg2:T1.9
+#1.9	AnnotatorNotes T1.9	LEMMA=_ POSTAG=NNP
+T1.10	SYM 55 62	\u26bd️
+R1.10-1	discourse Arg1:T1.2 Arg2:T1.10
+#1.10	AnnotatorNotes T1.10	LEMMA=_ POSTAG=E
+T1.11	SYM 63 69	\u2764
+R1.11-1	discourse Arg1:T1.2 Arg2:T1.11
+#1.11	AnnotatorNotes T1.11	LEMMA=_ POSTAG=E

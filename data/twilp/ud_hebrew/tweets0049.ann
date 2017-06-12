@@ -1,0 +1,12 @@
+T1.1	PROPN 0 8	@veredre
+R1.1-1	vocative Arg1:T1.3 Arg2:T1.1
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=@
+T1.2	ADV 9 11	גם
+R1.2-1	nmod Arg1:T1.3 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=_
+T1.3	PRON 12 15	אני
+A1.3-1	PronType T1.3 Prs
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=PRP
+T1.4	PUNCT 16 19	...
+R1.4-1	punct Arg1:T1.3 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=yyELPS

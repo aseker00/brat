@@ -3119,7 +3119,7 @@ Util.profileStart('before render');
 
       var highlight, highlightArcs, highlightSpans, commentId;
 
-      var onMouseOver = function(evt) {
+      var onMouseClick = function(evt) {
         var target = $(evt.target);
         var id;
         if (id = target.attr('data-span-id')) {
@@ -3229,6 +3229,131 @@ Util.profileStart('before render');
               originSpanId, originSpanType, role,
               targetSpanId, targetSpanType,
               commentText, commentType]);
+          highlightArcs = $svg.
+              find('g[data-from="' + originSpanId + '"][data-to="' + targetSpanId + '"]').
+              addClass('highlight');
+          highlightSpans = $($svg).
+              find('rect[data-span-id="' + originSpanId + '"], rect[data-span-id="' + targetSpanId + '"]').
+              parent().
+              addClass('highlight');
+        } else if (id = target.attr('data-sent')) {
+          var comment = data.sentComment[id];
+          if (comment) {
+            dispatcher.post('displaySentComment', [evt, target, comment.text, comment.type]);
+          }
+        }
+      };
+
+	  var onMouseOver = function(evt) {
+        var target = $(evt.target);
+        var id;
+        if (id = target.attr('data-span-id')) {
+          commentId = id;
+          var span = data.spans[id];
+          //dispatcher.post('displaySpanComment', [
+          //    evt, target, id, span.type, span.attributeText,
+          //    span.text,
+          //    span.comment && span.comment.text,
+          //    span.comment && span.comment.type,
+          //    span.normalizations]);
+
+          var spanDesc = spanTypes[span.type];
+          var bgColor = ((spanDesc && spanDesc.bgColor) ||
+                         (spanTypes.SPAN_DEFAULT && spanTypes.SPAN_DEFAULT.bgColor) ||
+                         '#ffffff');
+          if (span.hidden) return;
+          highlight = [];
+          $.each(span.fragments, function(fragmentNo, fragment) {
+            highlight.push(svg.rect(highlightGroup,
+                                 fragment.highlightPos.x, fragment.highlightPos.y,
+                                 fragment.highlightPos.w, fragment.highlightPos.h,
+                                 { 'fill': bgColor, opacity:0.75,
+                                   rx: highlightRounding.x,
+                                   ry: highlightRounding.y,
+                                 }));
+          });
+
+          if (that.arcDragOrigin) {
+            target.parent().addClass('highlight');
+          } else {
+            var equivs = {};
+            var spans = {};
+            spans[id] = true;
+            var spanIds = [];
+            // find all arcs, normal and equiv. Equivs need to go far (#1023)
+            var addArcAndSpan = function(arc, span) {
+              if (arc.equiv) {
+                equivs[arc.eventDescId.substr(0, arc.eventDescId.indexOf('*', 2) + 1)] = true;
+                var eventDesc = data.eventDescs[arc.eventDescId];
+                $.each(eventDesc.leftSpans.concat(eventDesc.rightSpans), function(ospanId, ospan) {
+                  spans[ospan] = true;
+                });
+              } else {
+                spans[arc.origin] = true;
+              }
+            }
+            $.each(span.incoming, function(arcNo, arc) {
+                addArcAndSpan(arc, arc.origin);
+            });
+            $.each(span.outgoing, function(arcNo, arc) {
+                addArcAndSpan(arc, arc.target);
+            });
+            var equivSelector = [];
+            $.each(equivs, function(equiv, dummy) {
+              equivSelector.push('[data-arc-ed^="' + equiv + '"]');
+            });
+
+            highlightArcs = $svg.
+                find(equivSelector.join(', ')).
+                parent().
+                add('g[data-from="' + id + '"], g[data-to="' + id + '"]' + equivSelector).
+                addClass('highlight');
+
+            $.each(spans, function(spanId, dummy) {
+                spanIds.push('rect[data-span-id="' + spanId + '"]');
+            });
+            highlightSpans = $svg.
+                find(spanIds.join(', ')).
+                parent().
+                addClass('highlight');
+          }
+        } else if (!that.arcDragOrigin && (id = target.attr('data-arc-role'))) {
+          var originSpanId = target.attr('data-arc-origin');
+          var targetSpanId = target.attr('data-arc-target');
+          var role = target.attr('data-arc-role');
+          var symmetric = (relationTypesHash &&
+                           relationTypesHash[role] &&
+                           relationTypesHash[role].properties &&
+                           relationTypesHash[role].properties.symmetric);
+          // NOTE: no commentText, commentType for now
+          var arcEventDescId = target.attr('data-arc-ed');
+          var commentText = '';
+          var commentType = '';
+          var arcId;
+          if (arcEventDescId) {
+            var eventDesc = data.eventDescs[arcEventDescId];
+            var comment = eventDesc.comment;
+            if (comment) {
+              commentText = comment.text;
+              commentType = comment.type;
+              if (commentText == '' && commentType) {
+                  // default to type if missing text
+                  commentText = commentType;
+              }
+            }
+            if (eventDesc.relation) {
+              // among arcs, only ones corresponding to relations have
+              // "independent" IDs
+              arcId = arcEventDescId;
+            }
+          }
+          var originSpanType = data.spans[originSpanId].type || '';
+          var targetSpanType = data.spans[targetSpanId].type || '';
+          //dispatcher.post('displayArcComment', [
+          //    evt, target, symmetric, arcId,
+          //    originSpanId, originSpanType, role,
+          //    targetSpanId, targetSpanType,
+          //    commentText, commentType]);
           highlightArcs = $svg.
               find('g[data-from="' + originSpanId + '"][data-to="' + targetSpanId + '"]').
               addClass('highlight');
@@ -3467,6 +3592,7 @@ Util.profileStart('before render');
           on('clearSVG', clearSVG).
           on('mouseover', onMouseOver).
           on('mouseout', onMouseOut);
+		  on('click', onMouseClick);
     };
 
     return Visualizer;

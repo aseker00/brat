@@ -1,0 +1,15 @@
+T1.1	VERB 0 4	נמאס
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=VB
+T1.2	ADP 5 6	ל
+R1.2-1	case Arg1:T1.3 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=_
+T1.3	PART 7 10	אני
+A1.3-1	PronType T1.3 Prs
+R1.3-1	iobj Arg1:T1.1 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=S_PRN
+T1.4	VERB 11 18	להתגעגע
+R1.4-1	csubj Arg1:T1.1 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=VB
+T1.5	PUNCT 19 20	.
+R1.5-1	punct Arg1:T1.1 Arg2:T1.5
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=yyDOT

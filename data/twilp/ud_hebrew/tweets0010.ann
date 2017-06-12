@@ -1,0 +1,31 @@
+T1.1	PROPN 0 10	@shlomin77
+R1.1-1	vocative Arg1:T1.2 Arg2:T1.1
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=@
+T1.2	ADV 11 13	לא
+R1.2-1	parataxis Arg1:T1.6 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=_
+T1.3	PUNCT 14 15	?
+R1.3-1	punct Arg1:T1.2 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=yyQM
+T1.4	PRON 16 20	איזו
+R1.4-1	det Arg1:T1.5 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=QW
+T1.5	NOUN 21 26	מפלגה
+R1.5-1	nsubj Arg1:T1.6 Arg2:T1.5
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=NN
+T1.6	VERB 27 32	הקימה
+#1.6	AnnotatorNotes T1.6	LEMMA=_ POSTAG=VB
+T1.7	PART 33 35	את
+R1.7-1	case Arg1:T1.9 Arg2:T1.7
+#1.7	AnnotatorNotes T1.7	LEMMA=_ POSTAG=AT
+T1.8	DET 36 37	ה
+A1.8-1	Definite T1.8 Def
+A1.8-2	PronType T1.8 Art
+R1.8-1	det Arg1:T1.9 Arg2:T1.8
+#1.8	AnnotatorNotes T1.8	LEMMA=_ POSTAG=DEF
+T1.9	NOUN 38 43	מדינה
+R1.9-1	obj Arg1:T1.6 Arg2:T1.9
+#1.9	AnnotatorNotes T1.9	LEMMA=_ POSTAG=NN
+T1.10	PUNCT 44 45	?
+R1.10-1	punct Arg1:T1.6 Arg2:T1.10
+#1.10	AnnotatorNotes T1.10	LEMMA=_ POSTAG=yyQM

@@ -1,0 +1,6 @@
+T1.1	VERB 0 4	מעכל
+A1.1-1	VerbForm T1.1 Part
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=BN
+T1.2	SYM 5 28	https://t.co/gLTlvmKOXg
+R1.2-1	dislocated Arg1:T1.1 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=U

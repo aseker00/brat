@@ -1,0 +1,87 @@
+T1.1	VERB 0 4	לקחת
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=VB
+T1.2	PROPN 5 11	דקסמול
+R1.2-1	obj Arg1:T1.1 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=NNP
+T1.3	CCONJ 12 13	ו
+R1.3-1	cc Arg1:T1.4 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=CONJ
+T1.4	VERB 14 20	להפסיק
+R1.4-1	conj Arg1:T1.1 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=VB
+T1.5	VERB 21 26	לסבול
+R1.5-1	xcomp Arg1:T1.4 Arg2:T1.5
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=VB
+T1.6	CCONJ 27 30	אבל
+R1.6-1	cc Arg1:T1.7 Arg2:T1.6
+#1.6	AnnotatorNotes T1.6	LEMMA=_ POSTAG=CC
+T1.7	VERB 31 35	ללכת
+R1.7-1	conj Arg1:T1.1 Arg2:T1.7
+#1.7	AnnotatorNotes T1.7	LEMMA=_ POSTAG=VB
+T1.8	VERB 36 41	לישון
+R1.8-1	xcomp Arg1:T1.7 Arg2:T1.8
+#1.8	AnnotatorNotes T1.8	LEMMA=_ POSTAG=VB
+T1.9	CCONJ 42 44	או
+R1.9-1	cc Arg1:T1.11 Arg2:T1.9
+#1.9	AnnotatorNotes T1.9	LEMMA=_ POSTAG=CC
+T1.10	ADV 45 47	לא
+R1.10-1	advmod Arg1:T1.11 Arg2:T1.10
+#1.10	AnnotatorNotes T1.10	LEMMA=_ POSTAG=RB
+T1.11	VERB 48 52	לקחת
+R1.11-1	conj Arg1:T1.1 Arg2:T1.11
+#1.11	AnnotatorNotes T1.11	LEMMA=_ POSTAG=VB
+T1.12	CCONJ 53 54	ו
+R1.12-1	cc Arg1:T1.13 Arg2:T1.12
+#1.12	AnnotatorNotes T1.12	LEMMA=_ POSTAG=CONJ
+T1.13	VERB 55 61	להישאר
+R1.13-1	conj Arg1:T1.11 Arg2:T1.13
+#1.13	AnnotatorNotes T1.13	LEMMA=_ POSTAG=VB
+T1.14	VERB 62 65	ערה
+R1.14-1	advmod Arg1:T1.13 Arg2:T1.14
+#1.14	AnnotatorNotes T1.14	LEMMA=_ POSTAG=VB
+T1.15	ADP 66 67	ל
+A1.15-1	AdpType T1.15 Prep
+R1.15-1	case Arg1:T1.16 Arg2:T1.15
+#1.15	AnnotatorNotes T1.15	LEMMA=_ POSTAG=PREPOSITION
+T1.16	PROPN 68 75	אספרנסה
+R1.16-1	obj Arg1:T1.13 Arg2:T1.16
+#1.16	AnnotatorNotes T1.16	LEMMA=_ POSTAG=NNP
+T1.17	PROPN 76 79	מיה
+R1.17-1	flat Arg1:T1.16 Arg2:T1.17
+#1.17	AnnotatorNotes T1.17	LEMMA=_ POSTAG=NNP
+T1.18	CCONJ 80 81	ו
+R1.18-1	cc Arg1:T1.21 Arg2:T1.18
+#1.18	AnnotatorNotes T1.18	LEMMA=_ POSTAG=CONJ
+T1.19	ADP 82 83	ל
+A1.19-1	AdpType T1.19 Prep
+R1.19-1	case Arg1:T1.21 Arg2:T1.19
+#1.19	AnnotatorNotes T1.19	LEMMA=_ POSTAG=PREPOSITION
+T1.20	DET 84 85	ה
+A1.20-1	Definite T1.20 Def
+A1.20-2	PronType T1.20 Art
+R1.20-1	det Arg1:T1.21 Arg2:T1.20
+#1.20	AnnotatorNotes T1.20	LEMMA=_ POSTAG=DEF
+T1.21	NOUN 86 90	ציוץ
+R1.21-1	conj Arg1:T1.16 Arg2:T1.21
+#1.21	AnnotatorNotes T1.21	LEMMA=_ POSTAG=NN
+T1.22	ADP 91 93	של
+A1.22-1	Poss T1.22 Yes
+R1.22-1	case Arg1:T1.23 Arg2:T1.22
+#1.22	AnnotatorNotes T1.22	LEMMA=_ POSTAG=POS
+T1.23	NOUN 94 98	גברת
+A1.23-1	Definite T1.23 Cons
+R1.23-1	nmod Arg1:T1.21 Arg2:T1.23
+#1.23	AnnotatorNotes T1.23	LEMMA=_ POSTAG=NNT
+T1.24	PROPN 99 107	אספוסיטו
+R1.24-1	flat Arg1:T1.23 Arg2:T1.24
+#1.24	AnnotatorNotes T1.24	LEMMA=_ POSTAG=NNP
+T1.25	DET 108 109	ה
+R1.25-1	det Arg1:T1.26 Arg2:T1.25
+#1.25	AnnotatorNotes T1.25	LEMMA=_ POSTAG=REL
+T1.26	ADJ 110 116	מעצבנת
+A1.26-1	VerbForm T1.26 Part
+R1.26-1	amod Arg1:T1.23 Arg2:T1.26
+#1.26	AnnotatorNotes T1.26	LEMMA=_ POSTAG=BN
+T1.27	PUNCT 117 118	?
+R1.27-1	punct Arg1:T1.1 Arg2:T1.27
+#1.27	AnnotatorNotes T1.27	LEMMA=_ POSTAG=yyQM

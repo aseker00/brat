@@ -1,0 +1,16 @@
+T1.1	VERB 0 4	אמלא
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=VB
+T1.2	PART 5 7	את
+R1.2-1	case Arg1:T1.3 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=AT
+T1.3	PRON 8 12	עצמי
+A1.3-1	PronType T1.3 Prs
+R1.3-1	iobj Arg1:T1.1 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=PRP
+T1.4	ADP 13 14	ב
+A1.4-1	AdpType T1.4 Prep
+R1.4-1	case Arg1:T1.5 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=PREPOSITION
+T1.5	NOUN 15 20	שתיקה
+R1.5-1	obj Arg1:T1.4 Arg2:T1.5
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=NN

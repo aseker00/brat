@@ -1,0 +1,29 @@
+T1.1	PRON 0 3	אני
+A1.1-1	PronType T1.1 Prs
+R1.1-1	nsubj Arg1:T1.3 Arg2:T1.1
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=PRP
+T1.2	DET 4 5	ה
+A1.2-1	Definite T1.2 Def
+A1.2-2	PronType T1.2 Art
+R1.2-1	det Arg1:T1.3 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=DEF
+T1.3	NOUN 6 11	בנאדם
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=NN
+T1.4	ADV 12 15	הכי
+R1.4-1	amod Arg1:T1.5 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=RB
+T1.5	ADJ 16 20	סקרן
+R1.5-1	amod Arg1:T1.3 Arg2:T1.5
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=JJ
+T1.6	ADP 21 22	ב
+R1.6-1	case Arg1:T1.8 Arg2:T1.6
+#1.6	AnnotatorNotes T1.6	LEMMA=_ POSTAG=NNP
+T1.7	DET 23 24	ה
+R1.7-1	det Arg1:T1.8 Arg2:T1.7
+#1.7	AnnotatorNotes T1.7	LEMMA=_ POSTAG=NNP
+T1.8	NOUN 25 29	יקום
+R1.8-1	nmod Arg1:T1.5 Arg2:T1.8
+#1.8	AnnotatorNotes T1.8	LEMMA=_ POSTAG=NNP
+T1.9	INTJ 30 33	םםם
+R1.9-1	discourse Arg1:T1.8 Arg2:T1.9
+#1.9	AnnotatorNotes T1.9	LEMMA=_ POSTAG=NNP
