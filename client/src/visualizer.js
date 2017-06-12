@@ -3591,7 +3591,7 @@ Util.profileStart('before render');
           on('current', gotCurrent).
           on('clearSVG', clearSVG).
           on('mouseover', onMouseOver).
-          on('mouseout', onMouseOut);
+          on('mouseout', onMouseOut).
 		  on('click', onMouseClick);
     };
 
