@@ -1,0 +1,89 @@
+T1.1	SYM 0 23	https://t.co/tkWaJ83mk5
+R1.1-1	dislocated Arg1:T1.11 Arg2:T1.1
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=U
+T1.2	PROPN 24 28	מכבי
+A1.2-1	Definite T1.2 Cons
+A1.2-2	VerbForm T1.2 Part
+R1.2-1	parataxis Arg1:T1.11 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=BNT
+T1.3	PROPN 29 33	קרית
+A1.3-1	Definite T1.3 Cons
+R1.3-1	flat Arg1:T1.2 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=NNT
+T1.4	PROPN 34 36	גת
+R1.4-1	flat Arg1:T1.2 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=NNP
+T1.5	NUM 37 39	75
+R1.5-1	nummod Arg1:T1.2 Arg2:T1.5
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=CD
+T1.6	ADP 40 43	מול
+A1.6-1	AdpType T1.6 Prep
+R1.6-1	case Arg1:T1.7 Arg2:T1.6
+#1.6	AnnotatorNotes T1.6	LEMMA=_ POSTAG=IN
+T1.7	PROPN 44 49	הפועל
+A1.7-1	Definite T1.7 Def
+A1.7-2	PronType T1.7 Art
+R1.7-1	nmod Arg1:T1.2 Arg2:T1.7
+#1.7	AnnotatorNotes T1.7	LEMMA=_ POSTAG=DEF
+T1.8	PROPN 50 54	אילת
+A1.8-1	Definite T1.8 Cons
+R1.8-1	flat Arg1:T1.7 Arg2:T1.8
+#1.8	AnnotatorNotes T1.8	LEMMA=_ POSTAG=NNT
+T1.9	NUM 55 58	104
+R1.9-1	nummod Arg1:T1.7 Arg2:T1.9
+#1.9	AnnotatorNotes T1.9	LEMMA=_ POSTAG=CD
+T1.10	NOUN 59 64	נצחון
+R1.10-1	nsubj Arg1:T1.11 Arg2:T1.10
+#1.10	AnnotatorNotes T1.10	LEMMA=_ POSTAG=NN
+T1.11	ADJ 65 70	ראשון
+#1.11	AnnotatorNotes T1.11	LEMMA=_ POSTAG=CD
+T1.12	ADP 71 73	של
+A1.12-1	Poss T1.12 Yes
+R1.12-1	case Arg1:T1.13 Arg2:T1.12
+#1.12	AnnotatorNotes T1.12	LEMMA=_ POSTAG=POS
+T1.13	PROPN 74 78	עודד
+R1.13-1	obl Arg1:T1.11 Arg2:T1.13
+#1.13	AnnotatorNotes T1.13	LEMMA=_ POSTAG=NNP
+T1.14	PROPN 79 82	קטש
+R1.14-1	flat Arg1:T1.13 Arg2:T1.14
+#1.14	AnnotatorNotes T1.14	LEMMA=_ POSTAG=NNP
+T1.15	ADP 83 84	ב
+A1.15-1	AdpType T1.15 Prep
+R1.15-1	case Arg1:T1.16 Arg2:T1.15
+#1.15	AnnotatorNotes T1.15	LEMMA=_ POSTAG=PREPOSITION
+T1.16	NOUN 85 90	תפקיד
+A1.16-1	Definite T1.16 Cons
+R1.16-1	obl Arg1:T1.11 Arg2:T1.16
+#1.16	AnnotatorNotes T1.16	LEMMA=_ POSTAG=NNT
+T1.17	NOUN 91 95	מאמן
+A1.17-1	Definite T1.17 Cons
+R1.17-1	nmod Arg1:T1.16 Arg2:T1.17
+#1.17	AnnotatorNotes T1.17	LEMMA=_ POSTAG=NNT
+T1.18	PROPN 96 101	הפועל
+A1.18-1	Definite T1.18 Def
+A1.18-2	PronType T1.18 Art
+R1.18-1	nmod Arg1:T1.17 Arg2:T1.18
+#1.18	AnnotatorNotes T1.18	LEMMA=_ POSTAG=DEF
+T1.19	PROPN 102 106	אילת
+R1.19-1	flat Arg1:T1.18 Arg2:T1.19
+#1.19	AnnotatorNotes T1.19	LEMMA=_ POSTAG=NNP
+T1.20	ADP 107 108	ב
+A1.20-1	AdpType T1.20 Prep
+R1.20-1	case Arg1:T1.22 Arg2:T1.20
+#1.20	AnnotatorNotes T1.20	LEMMA=_ POSTAG=PREPOSITION
+T1.21	DET 109 110	ה
+A1.21-1	Definite T1.21 Def
+A1.21-2	PronType T1.21 Art
+R1.21-1	det Arg1:T1.22 Arg2:T1.21
+#1.21	AnnotatorNotes T1.21	LEMMA=_ POSTAG=DEF
+T1.22	NOUN 111 115	עידן
+R1.22-1	obl Arg1:T1.11 Arg2:T1.22
+#1.22	AnnotatorNotes T1.22	LEMMA=_ POSTAG=NN
+T1.23	DET 116 117	ה
+A1.23-1	Definite T1.23 Def
+A1.23-2	PronType T1.23 Art
+R1.23-1	det Arg1:T1.24 Arg2:T1.23
+#1.23	AnnotatorNotes T1.23	LEMMA=_ POSTAG=DEF
+T1.24	ADJ 118 123	נוכחי
+R1.24-1	amod Arg1:T1.22 Arg2:T1.24
+#1.24	AnnotatorNotes T1.24	LEMMA=_ POSTAG=JJ

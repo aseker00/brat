@@ -1,0 +1,16 @@
+T1.1	PROPN 0 11	@metzayetz1
+A1.1-1	NumForm T1.1 Digit
+R1.1-1	vocative Arg1:T1.5 Arg2:T1.1
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=@
+T1.2	SCONJ 12 14	כי
+R1.2-1	mark Arg1:T1.5 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=CC
+T1.3	PRON 15 17	זה
+A1.3-1	PronType T1.3 Prs
+R1.3-1	nsubj Arg1:T1.5 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=PRP
+T1.4	ADV 18 20	לא
+R1.4-1	advmod Arg1:T1.5 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=RB
+T1.5	VERB 21 24	עבד
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=VB
