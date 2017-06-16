@@ -1,0 +1,15 @@
+T1.1	SYM 0 2	RT
+R1.1-1	dislocated Arg1:T1.5 Arg2:T1.1
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=~
+T1.2	PROPN 3 12	@mazalmot
+R1.2-1	flat Arg1:T1.1 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=@
+T1.3	PUNCT 13 14	:
+R1.3-1	flat Arg1:T1.1 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=~
+T1.4	DET 15 19	איזה
+A1.4-1	Definite T1.4 Cons
+R1.4-1	det Arg1:T1.5 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=DTT
+T1.5	NOUN 20 26	עייפות
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=NN

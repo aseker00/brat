@@ -1,0 +1,123 @@
+T1.1	PROPN 0 15	@KarenGrosskopf
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=@
+T1.2	ADJ 16 20	ברור
+R1.2-1	amod Arg1:T1.1 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=JJ
+T1.3	SCONJ 21 22	ש
+R1.3-1	mark Arg1:T1.1 Arg2:T1.3
+#1.3	AnnotatorNotes T1.3	LEMMA=_ POSTAG=REL
+T1.4	NOUN 23 31	אמריקאית
+R1.4-1	nsubj Arg1:T1.5 Arg2:T1.4
+#1.4	AnnotatorNotes T1.4	LEMMA=_ POSTAG=NN
+T1.5	ADJ 32 37	עדיפה
+#1.5	AnnotatorNotes T1.5	LEMMA=_ POSTAG=JJ
+T1.6	PUNCT 38 39	,
+R1.6-1	punct Arg1:T1.5 Arg2:T1.6
+#1.6	AnnotatorNotes T1.6	LEMMA=_ POSTAG=yyCM
+T1.7	CCONJ 40 43	אבל
+R1.7-1	cc Arg1:T1.9 Arg2:T1.7
+#1.7	AnnotatorNotes T1.7	LEMMA=_ POSTAG=CC
+T1.8	SCONJ 44 45	ש
+R1.8-1	mark Arg1:T1.9 Arg2:T1.8
+#1.8	AnnotatorNotes T1.8	LEMMA=_ POSTAG=REL
+T1.9	VERB 46 48	יש
+A1.9-1	AdvType T1.9 Ex
+R1.9-1	conj Arg1:T1.5 Arg2:T1.9
+#1.9	AnnotatorNotes T1.9	LEMMA=_ POSTAG=EX
+T1.10	ADP 49 50	ל
+A1.10-1	AdpType T1.10 Prep
+R1.10-1	case Arg1:T1.11 Arg2:T1.10
+#1.10	AnnotatorNotes T1.10	LEMMA=_ POSTAG=IN
+T1.11	PRON 51 54	אני
+A1.11-1	PronType T1.11 Prs
+R1.11-1	obj Arg1:T1.9 Arg2:T1.11
+#1.11	AnnotatorNotes T1.11	LEMMA=_ POSTAG=S_PRN
+T1.12	PRON 55 57	את
+R1.12-1	case Arg1:T1.14 Arg2:T1.12
+#1.12	AnnotatorNotes T1.12	LEMMA=_ POSTAG=AT
+T1.13	DET 58 59	ה
+A1.13-1	Definite T1.13 Def
+A1.13-2	PronType T1.13 Art
+R1.13-1	det Arg1:T1.14 Arg2:T1.13
+#1.13	AnnotatorNotes T1.13	LEMMA=_ POSTAG=DEF
+T1.14	NOUN 60 66	אפשרות
+R1.14-1	nsubj Arg1:T1.9 Arg2:T1.14
+#1.14	AnnotatorNotes T1.14	LEMMA=_ POSTAG=NN
+T1.15	VERB 67 71	לקבל
+R1.15-1	acl Arg1:T1.14 Arg2:T1.15
+#1.15	AnnotatorNotes T1.15	LEMMA=_ POSTAG=VB
+T1.16	ADJ 72 80	אירופאית
+R1.16-1	advmod Arg1:T1.15 Arg2:T1.16
+#1.16	AnnotatorNotes T1.16	LEMMA=_ POSTAG=JJ
+T1.17	CCONJ 81 82	ו
+R1.17-1	cc Arg1:T1.19 Arg2:T1.17
+#1.17	AnnotatorNotes T1.17	LEMMA=_ POSTAG=CONJ
+T1.18	ADV 83 85	לא
+R1.18-1	advmod Arg1:T1.19 Arg2:T1.18
+#1.18	AnnotatorNotes T1.18	LEMMA=_ POSTAG=RB
+T1.19	VERB 86 92	נותנים
+A1.19-1	VerbForm T1.19 Part
+R1.19-1	conj Arg1:T1.9 Arg2:T1.19
+#1.19	AnnotatorNotes T1.19	LEMMA=_ POSTAG=BN
+T1.20	ADP 93 94	ל
+A1.20-1	AdpType T1.20 Prep
+R1.20-1	case Arg1:T1.21 Arg2:T1.20
+#1.20	AnnotatorNotes T1.20	LEMMA=_ POSTAG=IN
+T1.21	PRON 95 98	אני
+A1.21-1	PronType T1.21 Prs
+R1.21-1	iobj Arg1:T1.19 Arg2:T1.21
+#1.21	AnnotatorNotes T1.21	LEMMA=_ POSTAG=S_PRN
+T1.22	PRON 99 101	זה
+A1.22-1	PronType T1.22 Prs
+R1.22-1	nsubj Arg1:T1.23 Arg2:T1.22
+#1.22	AnnotatorNotes T1.22	LEMMA=_ POSTAG=PRP
+T1.23	VERB 102 107	מעצבן
+A1.23-1	VerbForm T1.23 Part
+R1.23-1	advcl Arg1:T1.9 Arg2:T1.23
+#1.23	AnnotatorNotes T1.23	LEMMA=_ POSTAG=BN
+T1.24	CCONJ 108 109	ו
+R1.24-1	cc Arg1:T1.25 Arg2:T1.24
+#1.24	AnnotatorNotes T1.24	LEMMA=_ POSTAG=CONJ
+T1.25	PRON 110 113	אני
+A1.25-1	PronType T1.25 Prs
+R1.25-1	conj Arg1:T1.9 Arg2:T1.25
+#1.25	AnnotatorNotes T1.25	LEMMA=_ POSTAG=PRP
+T1.26	DET 114 115	ה
+A1.26-1	Definite T1.26 Def
+A1.26-2	PronType T1.26 Art
+R1.26-1	det Arg1:T1.27 Arg2:T1.26
+#1.26	AnnotatorNotes T1.26	LEMMA=_ POSTAG=DEF
+T1.27	NOUN 116 119	דור
+R1.27-1	acl Arg1:T1.25 Arg2:T1.27
+#1.27	AnnotatorNotes T1.27	LEMMA=_ POSTAG=NN
+T1.28	DET 120 121	ה
+A1.28-1	Definite T1.28 Def
+A1.28-2	PronType T1.28 Art
+R1.28-1	det Arg1:T1.29 Arg2:T1.28
+#1.28	AnnotatorNotes T1.28	LEMMA=_ POSTAG=DEF
+T1.29	ADJ 122 127	אחרון
+R1.29-1	amod Arg1:T1.27 Arg2:T1.29
+#1.29	AnnotatorNotes T1.29	LEMMA=_ POSTAG=JJ
+T1.30	SCONJ 128 129	ש
+R1.30-1	mark Arg1:T1.31 Arg2:T1.30
+#1.30	AnnotatorNotes T1.30	LEMMA=_ POSTAG=REL
+T1.31	VERB 130 134	יכול
+A1.31-1	VerbType T1.31 Mod
+R1.31-1	amod Arg1:T1.27 Arg2:T1.31
+#1.31	AnnotatorNotes T1.31	LEMMA=_ POSTAG=MD
+T1.32	ADV 135 137	אז
+R1.32-1	advmod Arg1:T1.35 Arg2:T1.32
+#1.32	AnnotatorNotes T1.32	LEMMA=_ POSTAG=RB
+T1.33	DET 138 141	למה
+A1.33-1	PronType T1.33 Int
+R1.33-1	aux Arg1:T1.35 Arg2:T1.33
+#1.33	AnnotatorNotes T1.33	LEMMA=_ POSTAG=QW
+T1.34	ADV 142 144	לא
+R1.34-1	advmod Arg1:T1.35 Arg2:T1.34
+#1.34	AnnotatorNotes T1.34	LEMMA=_ POSTAG=RB
+T1.35	VERB 145 149	לנצל
+R1.35-1	acl Arg1:T1.27 Arg2:T1.35
+#1.35	AnnotatorNotes T1.35	LEMMA=_ POSTAG=VB
+T1.36	PUNCT 150 151	?
+R1.36-1	punct Arg1:T1.25 Arg2:T1.36
+#1.36	AnnotatorNotes T1.36	LEMMA=_ POSTAG=yyQM

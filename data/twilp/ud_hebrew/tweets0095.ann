@@ -1,0 +1,6 @@
+T1.1	NOUN 0 2	פח
+A1.1-1	Definite T1.1 Cons
+#1.1	AnnotatorNotes T1.1	LEMMA=_ POSTAG=NNT
+T1.2	NOUN 3 7	אשפה
+R1.2-1	nmod Arg1:T1.1 Arg2:T1.2
+#1.2	AnnotatorNotes T1.2	LEMMA=_ POSTAG=NN
